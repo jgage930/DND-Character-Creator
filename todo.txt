@@ -1,0 +1,4 @@
+Spell Viewer
+    1.  Create a script that scrapes the spell data off a website
+    2.  Store in an sqlight3 data base
+    3.  create a view in flask
