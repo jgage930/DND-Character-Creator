@@ -4,11 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{ %block title %} {% endblock %}</title>
+    <title>{% block title %} {% endblock %}</title>
 </head>
 <body>
-    <nav class="navbar">
-        
+    <nav>
+        {% for name in names %}
+        <a href="#">{{ name }}</a>
+        {% endfor %}
     </nav>
+    <div>
+        {% block content %} {% endblock %}
+    </div>
 </body>
 </html>
